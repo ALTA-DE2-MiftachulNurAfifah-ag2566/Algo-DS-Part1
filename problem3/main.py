@@ -1,5 +1,15 @@
 def fibonacci(number):
-    return 0
+    if number == 0:
+        return 0
+    elif number == 1:
+        return 0
+    elif number == 2:
+        return 1
+    else:
+        a, b = 0, 1
+        for m in range(number-1):
+            a, b = b, a + b
+        return b
 
 if __name__ == "__main__":
     print(fibonacci(0))  # 0
